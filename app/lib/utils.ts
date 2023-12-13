@@ -22,8 +22,8 @@ export const formatDateToLocal = (
 };
 
 export const generateYAxis = (revenue: Revenue[]) => {
-  // Calculate what labels we need to display on the y-axis
-  // based on highest record and in 1000s
+  // Calculate what labels we need to display on the y-axis 计算我们需要在y轴上显示哪些标签
+  // based on highest record and in 1000s 基于最高记录和1000s
   const yAxisLabels = [];
   const highestRecord = Math.max(...revenue.map((month) => month.revenue));
   const topLabel = Math.ceil(highestRecord / 1000) * 1000;
